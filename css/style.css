@@ -51,7 +51,6 @@ header {
    
 }
 
-
 .box image{
     height: 100%;
     width: 100%;
@@ -61,7 +60,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 5px solid rgb(238, 68, 68);
+    border: 5px solid rgb(68, 94, 238);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,24 +94,34 @@ header {
     grid-template-columns: 1fr; 
     grid-template-rows: 0fr repeat(3, 1fr);
     gap: 20px;
-    
 }
 
+#box-interface3{
+    display: none;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0fr repeat(3, 1fr);
+    gap: 20px;
+}
 
 .box-inf2, .box-inf3{
     border: 5px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#box-interface3{display: none;}
+
 
 
 
 @media screen and (max-width: 700px){
+
+    body{height: 100vh;}
+
     #container{
         height: 100%; width: 100%; gap: 0px; padding: 0px; margin: 0px; gap: 0px;
+        
     }
-    #btn-home{ font-size: 30px;   grid-template-columns: repeat(auto-fit, 50%); 
-    }
+    #btn-home{ font-size: 30px; }
     .box{font-size: 12vw;}
 }
 
