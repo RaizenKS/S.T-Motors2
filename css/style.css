@@ -86,21 +86,33 @@ header {
 
 #interface2{
     display: none;
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto-fit;
     padding: 30px;
-    font-size:4vw;
+    font-size:8vw;
+}
+
+#box-interface2{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0fr repeat(3, 1fr);
+    gap: 20px;
+    
 }
 
 
+.box-inf2, .box-inf3{
+    border: 5px solid red;
+}
+
+#box-interface3{display: none;}
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     #container{
         height: 100%; width: 100%; gap: 0px; padding: 0px; margin: 0px; gap: 0px;
     }
     #btn-home{ font-size: 30px;   grid-template-columns: repeat(auto-fit, 50%); 
     }
+    .box{font-size: 12vw;}
 }
 
