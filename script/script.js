@@ -25,7 +25,6 @@ box.forEach((nbox) =>{
         box[5].style.display = "none";
 
         interface2.style.display = "grid";
-        body.style.height = "180vh"
         container.style.gridTemplateColumns = "1fr";
         container.style.padding ="0px";
         labelEmp.innerHTML = nbox.innerHTML
