@@ -100,7 +100,6 @@ header {
     font-size:7vw;
 
 }
-
 #box-interface2{
     display: grid;
     grid-template-columns: 1fr; 
@@ -109,15 +108,21 @@ header {
 }
 
 
-#box-interface3{
+#interface3{
     display: none;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0fr repeat(6, 1fr);
+    padding: 30px;
+    font-size:7vw;
+}
+
+#box-interface3{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr repeat(6, 0.8fr);
     gap: 20px;
 }
 
 
-.box-inf2, .box-inf3 {
+.box-inf2{
     display: grid;
     cursor: pointer;
     border: none;
@@ -128,9 +133,9 @@ header {
     text-decoration: none;
 }
 
-h2{background-color: rgb(141, 141, 119);}
 
-.box-inf2 :hover, .box-inf3:hover {
+
+.box-inf2 :hover{
     scale: 0.9;
 }
 
@@ -140,6 +145,22 @@ h2{background-color: rgb(141, 141, 119);}
     object-fit: cover;
     object-position: center;
     max-width: 100%; 
+}
+
+.box-inf3 {
+    display: grid;
+    border: none;
+    grid-template-columns:0.4fr repeat(4, 0.2fr) ;
+    font-size: 2vw;
+    background-color: rgb(148, 154, 160);
+    place-items: center;
+    text-decoration: none;
+}
+
+.hora{
+    color: black;
+    border: 2px solid black;
+    background-color: white;
 }
 
 
