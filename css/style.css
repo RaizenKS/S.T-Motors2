@@ -116,11 +116,22 @@ header {
     gap: 20px;
 }
 
+
 .box-inf2, .box-inf3 {
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
-
+    cursor: pointer;
+    border: none;
+    grid-template-columns: 0.2fr 0.2fr 1fr;
+    font-size: 2vw;
+    background-color: rgb(148, 154, 160);
     place-items: center;
+    text-decoration: none;
+}
+
+h2{background-color: rgb(141, 141, 119);}
+
+.box-inf2 :hover, .box-inf3:hover {
+    scale: 0.9;
 }
 
 #box-inf1 img, #box-inf2 img, #box-inf3 img, #box-inf4 img{
