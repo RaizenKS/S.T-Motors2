@@ -107,7 +107,7 @@ header {
 #interface2{
     display: none;
     padding: 30px;
-    font-size:5vw;
+    font-size:7vw;
 }
 
 #box-interface2{
@@ -144,13 +144,6 @@ header {
 
 
 
-
-
-
-
-
-
-
 @media screen and (max-width: 700px){
 
     body{height: 100vh;}
@@ -168,8 +161,10 @@ header {
     .box::after {
         font-size: 8vw;
     }
+    #box-interface2{grid-template-rows: 0.5fr repeat(4, 1fr);}
+
     #btn-home{ font-size: 30px; }
-    .box{font-size: 12vw;}
+
 }
 
 
