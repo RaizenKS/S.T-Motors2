@@ -18,7 +18,6 @@ box.forEach((nbox) =>{
         box[4].style.display = "none";
         box[5].style.display = "none";
 
-        
         interface2.style.display = "grid";
         container.style.gridTemplateColumns = "1fr";
         container.style.gridTemplateRows = "0.1fr 1fr";

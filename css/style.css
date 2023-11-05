@@ -140,8 +140,10 @@ header {
 
     #container{
         grid-template-columns: 1fr;
-        height: 100%; width: 100%; gap: 0px; padding: 0px; margin: 0px; gap: 0px;
-        
+        height: 100%; width: 100%; gap: 0px; padding: 0px; margin: 0px; gap: 0px; 
+    }
+    .box::after {
+        font-size: 8vw;
     }
     #btn-home{ font-size: 30px; }
     .box{font-size: 12vw;}
