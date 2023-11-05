@@ -179,13 +179,13 @@ h2{background-color: rgb(141, 141, 119);}
 @media screen and (max-width: 550px){
 
     .container{grid-template-rows: 1fr;}
-    body{height: 150vh;}
+    body{height: 160vh;}
 }
 
 
 @media screen and (max-width: 450px){
 
-    body{height: 120vh;}
+    body{height: 130vh;}
     .box-inf2{font-size: 4vw; grid-template-columns: 0.5fr 0.3fr 1fr;}
     #box-interface2{grid-template-rows: 0.5fr repeat(4, 1.5fr);}
 }
