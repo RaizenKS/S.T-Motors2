@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const btnHome= document.querySelector("#btn-home");
 const container = document.querySelector("#container");
 const box = document.querySelectorAll(".box");
@@ -17,10 +18,9 @@ box.forEach((nbox) =>{
         box[4].style.display = "none";
         box[5].style.display = "none";
 
-
+        
         interface2.style.display = "grid";
-        nbox.style.fontSize ="8vw";
-        nbox.style.display = "grid";
+        container.style.gridTemplateColumns = "1fr";
         container.style.gridTemplateRows = "0.1fr 1fr";
         container.style.padding ="0px";
         

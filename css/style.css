@@ -55,12 +55,12 @@ header {
     height: 100%;
     width: 100%;
 }
+
 .box{
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,10 +78,32 @@ header {
 
 #box1{background-image: url("/image/lav-simples.png");}
 #box2{background-image: url("/image/lav-vapor.jpg");}
-#box3{background-image: url("/image/Higienizacao-automotiva.jpeg");}
-#box4{background-image: url("/image/purificacaoar.jpg");}
+#box3{background-image: url("/image/Higienizacao-automotiva.png");}
+#box4{background-image: url("/image/purificacaoar.png");}
 #box5{background-image: url("/image/snowfoam.jpg");}
 #box6{background-image: url("/image/lav-seco.png");}
+
+.box::after {
+    content: attr(data-legenda); 
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    padding: 10px 20px; 
+    font-family: 'Kenia', sans-serif;
+    font-size: 3vw; 
+    border-radius: 5px; 
+    white-space: nowrap;
+    display: none; 
+    z-index: 1; 
+}
+
+.box:hover::after {
+    display: block; 
+    background-color: rgba(0, 0, 0, 0.9); 
+}
 
 #interface2{
     display: none;
@@ -124,4 +146,5 @@ header {
     #btn-home{ font-size: 30px; }
     .box{font-size: 12vw;}
 }
+
 
