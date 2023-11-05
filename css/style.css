@@ -60,20 +60,10 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(250, 225, 62); 
     transition: 0.2s;
-    font-family: 'Kenia', sans-serif;
-    background-color: rgba(255, 255, 255, 0.5);
-    font-size: 5vw;
-    font-weight: lighter;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-    
+    font-size: 0;
 }
-.box:hover{scale:0.9; color: rgb(22, 51, 182)}
+.box:hover{scale:0.9;}
 
 #box1{background-image: url("/image/lav-simples.png");}
 #box2{background-image: url("/image/lav-vapor.jpg");}
@@ -113,11 +103,10 @@ header {
 #box-interface2{
     display: grid;
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr repeat(4, 1fr);
+    grid-template-rows: auto;
     gap: 20px;
 }
 
-.box{font-size: 0px;}
 
 #box-interface3{
     display: none;
@@ -126,16 +115,22 @@ header {
     gap: 20px;
 }
 
-.box-inf2, .box-inf3{
+.box-inf2, .box-inf3 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
+    place-items: center;
+}
+
+#box-inf1 img, #box-inf2 img, #box-inf3 img, #box-inf4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%; 
 }
 
 
-    #box2-inf1{background-image: url("/image/empresas/empresas1.jpg");}
-    #box2-inf2{background-image: url("/image/empresas/empresas2.jpg");}
-    #box2-inf3{background-image: url("/image/empresas/empresas3.jpg");}
-    #box2-inf4{background-image: url("/image/empresas/empresas4.jpg");}
+
 
 
 
@@ -165,6 +160,7 @@ header {
 
     #btn-home{ font-size: 30px; }
 
+    .box-inf2, .box-inf3 {grid-template-columns: 0.5fr 1fr;}
 }
 
 

@@ -3,8 +3,11 @@ const btnHome= document.querySelector("#btn-home");
 const container = document.querySelector("#container");
 const box = document.querySelectorAll(".box");
 const interface2 = document.querySelector("#interface2");
-const labelEmp= document.querySelector("#lab-emp")
+const labelEmp= document.querySelector("#lab-emp");
 
+
+document.addEventListener('DOMContentLoaded', function() {
+   
 
 function home(){location.href="index.html"}
 
@@ -22,9 +25,8 @@ box.forEach((nbox) =>{
         box[5].style.display = "none";
 
         interface2.style.display = "grid";
-        body.style.height = "150vh"
+        body.style.height = "180vh"
         container.style.gridTemplateColumns = "1fr";
-        container.style.gridTemplateRows = "1fr";
         container.style.padding ="0px";
         labelEmp.innerHTML = nbox.innerHTML
 
@@ -40,3 +42,6 @@ box.forEach((nbox) =>{
     })
 })
 
+
+
+});
