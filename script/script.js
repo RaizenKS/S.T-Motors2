@@ -9,15 +9,6 @@ const interface3= document.querySelector("#interface3");
 const boxinf3 = document.querySelectorAll(".box-inf3");
 const hora = document.querySelectorAll(".hora");
 
-
-function getRandomColor() {
-   let coresVerde = [ "rgb(0, 255, 0)"];
-   let coresVermelho = ["rgb(255, 0, 0)"]; 
-   let escolheCor = Math.random() < 0.5 ? coresVerde[Math.floor(Math.random() * coresVerde.length)] : coresVermelho[Math.floor(Math.random() * coresVermelho.length)];
-    return escolheCor;
-}
-
-
 document.addEventListener('DOMContentLoaded', function() {
    
 
@@ -44,7 +35,6 @@ box.forEach((nbox) =>{
 })
 
 //Abaixo os comandos da interface2
-hora.forEach((horinha)=>{horinha.style.backgroundColor= getRandomColor();})
 boxinf2.forEach((infbox2)=>{
 
 infbox2.addEventListener("click", function(){
