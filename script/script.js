@@ -9,7 +9,9 @@ const interface3= document.querySelector("#interface3");
 const boxinf3 = document.querySelectorAll(".box-inf3");
 const hora = document.querySelectorAll(".hora");
 const interface4 = document.querySelector("#interface4");
-const h4pedidos = document.querySelectorAll(".h4-info")
+const h4pedidos = document.querySelectorAll(".h4-info");
+const btnConfirmar = document.querySelector("#btn-confirmar");
+const interface5 = document.querySelector("#interface5");
 
 
 let lavagem, empresa, horario, local, telefone;
@@ -72,9 +74,12 @@ horinha.addEventListener("click",function(){
     h4pedidos[2].innerHTML+=" "+ horario;
     h4pedidos[3].innerHTML+=" "+ local;
     container.style.gridTemplateRows = "1fr 2fr";
-    
+})
 })
 
+btnConfirmar.addEventListener("click", function(){
+    interface4.style.display = "none";
+    interface5.style.display = "grid";
 })
 
 
