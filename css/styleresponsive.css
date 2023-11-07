@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 450px) and (min-height: 400px){
 
-    
+    body{height: 100vh;}
     .box-inf2{font-size: 4vw; grid-template-columns: 0.5fr 0.3fr 1fr;}
     #box-interface2{grid-template-rows: 0.5fr repeat(4, 1.5fr);}
     #box-interface3{grid-template-rows: 0.5fr repeat(6, 3.2fr)}
