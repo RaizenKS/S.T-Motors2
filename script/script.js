@@ -8,6 +8,13 @@ const boxinf2 = document.querySelectorAll(".box-inf2");
 const interface3= document.querySelector("#interface3");
 const boxinf3 = document.querySelectorAll(".box-inf3");
 const hora = document.querySelectorAll(".hora");
+const interface4 = document.querySelector("#interface4");
+const h4pedidos = document.querySelectorAll(".h4-info")
+
+
+let lavagem, empresa, horario, local, telefone;
+lavagem = ""; empresa = ""; horario = ""; local = ""; telefone = "";
+
 
 document.addEventListener('DOMContentLoaded', function() {
    
@@ -30,7 +37,8 @@ box.forEach((nbox) =>{
         interface2.style.display = "grid";
         container.style.gridTemplateColumns = "1fr";
         container.style.padding ="0px";
-        labelEmp.innerHTML = nbox.innerHTML;        
+        labelEmp.innerHTML = nbox.innerHTML;
+        lavagem = nbox.innerHTML;        
     })
 })
 
@@ -38,12 +46,37 @@ box.forEach((nbox) =>{
 boxinf2.forEach((infbox2)=>{
 
 infbox2.addEventListener("click", function(){
+
+empresa = this.querySelector("h2").innerHTML;
 interface2.style.display="none";
 interface3.style.display="grid";
 
+let conteudoBotao = this.cloneNode(true);
+        conteudoBotao.querySelector("h2").remove();
+        local = conteudoBotao.textContent.trim();
+        
+
+})
+
+
+})
+
+hora.forEach((horinha) =>{
+
+horinha.addEventListener("click",function(){
+    horario = horinha.innerHTML;
+    interface3.style.display="none";
+    interface4.style.display="grid";
+    h4pedidos[0].innerHTML+=" "+ lavagem;
+    h4pedidos[1].innerHTML+=" "+ empresa;
+    h4pedidos[2].innerHTML+=" "+ horario;
+    h4pedidos[3].innerHTML+=" "+ local;
+    container.style.gridTemplateRows = "1fr 2fr";
+    
 })
 
 })
+
 
 
 
